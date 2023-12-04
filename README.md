@@ -1,3 +1,5 @@
+# This is a fork to disable password from Secrets Manager
+
 # AWS RDS Terraform module
 
 Terraform module which creates RDS resources on AWS.
