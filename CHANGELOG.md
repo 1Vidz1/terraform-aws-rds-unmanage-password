@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file.
 
+## [6.4.0](https://github.com/terraform-aws-modules/terraform-aws-rds/compare/v6.3.1...v6.4.0) (2024-02-02)
+
+
+### Features
+
+* Secretsmanager secret rotation for master user password ([#537](https://github.com/terraform-aws-modules/terraform-aws-rds/issues/537)) ([93c85ef](https://github.com/terraform-aws-modules/terraform-aws-rds/commit/93c85efddeac23ce1dbf96f7e53d8326bca71e25))
+
+### [6.3.1](https://github.com/terraform-aws-modules/terraform-aws-rds/compare/v6.3.0...v6.3.1) (2024-01-10)
+
+
+### Bug Fixes
+
+* Align the default value of `manage_master_user_password` in the instance sub-module with the root module ([#531](https://github.com/terraform-aws-modules/terraform-aws-rds/issues/531)) ([8b90616](https://github.com/terraform-aws-modules/terraform-aws-rds/commit/8b906169527162faa8fc928aa9b5edf6cfbc1f5e))
+
 ## [6.3.0](https://github.com/terraform-aws-modules/terraform-aws-rds/compare/v6.2.0...v6.3.0) (2023-11-13)
 
 
