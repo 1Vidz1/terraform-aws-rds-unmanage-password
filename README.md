@@ -1,4 +1,8 @@
-# This is a fork to disable password from Secrets Manager
+# This is a fork to disable password management from Secrets Manager
+
+Update: Password only needed in first setup of DB. Any other password change needs to be managed on the Console
+
+Note: Don't forget to change the password on the AWS Console after deploying the module
 
 # AWS RDS Terraform module
 

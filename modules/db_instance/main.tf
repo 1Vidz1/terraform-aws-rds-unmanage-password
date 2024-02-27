@@ -140,6 +140,13 @@ resource "aws_db_instance" "this" {
 
   # Note: do not add `latest_restorable_time` to `ignore_changes`
   # https://github.com/terraform-aws-modules/terraform-aws-rds/issues/478
+
+  #Ignore DB password changes to be manages on the console
+  lifecycle {
+    ignore_changes = [
+      password
+    ]
+  }
 }
 
 ################################################################################
