@@ -41,6 +41,9 @@ module "db" {
   username = "complete_mysql"
   port     = 3306
 
+  # After apply, change password on the console
+  password = "mypassword"
+
   multi_az               = true
   db_subnet_group_name   = module.vpc.database_subnet_group
   vpc_security_group_ids = [module.security_group.security_group_id]
@@ -104,6 +107,9 @@ module "db_default" {
   db_name  = "completeMysql"
   username = "complete_mysql"
   port     = 3306
+
+  # After apply, change password on the console
+  password = "mypassword"
 
   db_subnet_group_name   = module.vpc.database_subnet_group
   vpc_security_group_ids = [module.security_group.security_group_id]
